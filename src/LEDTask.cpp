@@ -36,11 +36,12 @@ void LEDTask(void* args) {
 //    }
 
     // test different delays, monitor with oscilloscope to verify timing
+    
     digitalWrite(ledPin, LOW);
-    testDelayMS(1);
+    testDelayMS(1000);
     digitalWrite(ledPin, HIGH);
-    testDelayMS(1);
-
+    testDelayMS(1000);
+/*
     digitalWrite(ledPin, LOW);
     delay(1);
     digitalWrite(ledPin, HIGH);
@@ -80,6 +81,7 @@ void LEDTask(void* args) {
     testDelayMS(500);
     digitalWrite(ledPin, HIGH);
     testDelayMS(500);
+    */
 
 //    vTaskDelay(500);
   }

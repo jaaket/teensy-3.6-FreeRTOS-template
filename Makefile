@@ -2,11 +2,13 @@
 TARGET = $(notdir $(CURDIR))
 
 # The teensy version to use, 30, 31, 35, 36, or LC
-TEENSY = 36
+# TEENSY = 36
+TEENSY = 31
 
 # Set to 24000000, 48000000, or 96000000 to set CPU core speed
 #TEENSY_CORE_SPEED = 48000000
-TEENSY_CORE_SPEED = 180000000
+# TEENSY_CORE_SPEED = 180000000
+TEENSY_CORE_SPEED = 72000000
 
 # Some libraries will require this to be defined
 # If you define this, you will break the default main.cpp
@@ -43,11 +45,13 @@ COREPATH = teensy3
 LIBRARYPATH = libraries
 
 # path location for the arm-none-eabi compiler
-COMPILERPATH = $(TOOLSPATH)/arm/bin
+# COMPILERPATH = $(TOOLSPATH)/arm/bin
+COMPILERPATH = /usr/local/bin
 
 # path location for FreeRTOS directory structure
 FREERTOSPATH = FreeRTOS/Source
-FREERTOSPORT = portable/GCC/ARM_CM4F
+# FREERTOSPORT = portable/GCC/ARM_CM4F
+FREERTOSPORT = portable/GCC/ARM_CM3
 
 #************************************************************************
 # Settings below this point usually do not need to be edited
